@@ -1,0 +1,72 @@
+/* Styles pour le lien CSS */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/* CSS pour l'écran titre du jeu */
+body {
+  background-color: #000000;
+}
+
+#game_title {
+  font-size: 100px;
+  font-family: 'Press Start 2P', cursive;
+  text-align: center;
+  margin-top: 50px;
+  text-transform: uppercase;
+  color: #f6e51e;
+  text-shadow: 0 0 10px #000000, 0 0 20px #f6e51e, 0 0 30px #f6e51e, 0 0 40px #ff4800, 0 0 70px #ff4800, 0 0 80px #ff4800, 0 0 100px #ff4800, 0 0 150px #ff4800;
+  animation: explode 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  margin-top: 80px;
+}
+
+@keyframes explode {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+button {
+  display: block;
+  margin: 30px auto;
+  font-size: 30px;
+  font-family: 'Press Start 2P', cursive;
+  background-color: #000000;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 3px 3px 0px #9e4400;
+  background: linear-gradient(to bottom right, #793400 50%, #000000 50%), linear-gradient(to top left, #9e4400 50%, #000000 50%);
+  background-size: 200% 200%;
+  background-position: top left;
+  border-image: linear-gradient(to right, #f6e51e, #ff4800);
+  border-image-slice: 2;
+}
+
+button:hover {
+  background-position: bottom right, top left;
+  color: #9e4400;
+  transform: scale(1.1);
+  box-shadow: 5px 5px 0px #9e4400;
+}
+
+#button_start_player_two {
+  margin-top: 0;
+}
+
+#button_option {
+  margin-top: 50px;
+}
+
+#button_credits {
+  margin-top: 50px;
+}
