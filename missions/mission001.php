@@ -2,7 +2,7 @@
 
 <canvas id="mission001" width="400" height="400"></canvas>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/5.3.3/pixi.min.js"></script>
-<script src="./mission001.js"></script>
+<script type="module" src="./mission001.js"></script>
 
 <style>
       html, body {

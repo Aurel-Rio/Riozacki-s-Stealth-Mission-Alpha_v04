@@ -1,4 +1,4 @@
-class Keyboard {
+export class Keyboard {
     constructor() {
       // Tableau pour stocker les touches enfoncées
       this.keys = [];
