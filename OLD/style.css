@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+
+body {
+  background-color: #000;
+  font-family: 'Press Start 2P', cursive;
+}
+
+#title-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #000;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAADsQAAA7EBuhorkAAAAHdElNRQfhAgcULgUK+DY6AAAAXElEQVQY02NgoCfQ//8MAyAEQIbG/+f0cTGKk//8zHgCfZr0zv5h5wAAUhjIMf+5qyAAAAAElFTkSuQmCC');
+  animation: bg-scroll 20s linear infinite;
+}
+
+@keyframes bg-scroll {
+  0% {
+    background-position: 0px 0px;
+  }
+  100% {
+    background-position: 32px 32px;
+  }
+}
+
+#title-screen h1 {
+  font-size: 62px;
+  color: #e49e44;
+  text-shadow: 2px 2px 0 #FF8C00;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  50% {
+    color: #dd6025;
+    text-shadow: 2px 2px 0 #FFA500;
+  }
+}
+
+#title-screen ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#title-screen li {
+  margin: 10px;
+  font-size: 32px;
+}
+
+#title-screen li a {
+  display: block;
+  width: 300px;
+  padding: 10px;
+  border: 2px solid #FFA500;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  text-shadow: 2px 2px 0 #5f3400;
+  background-color: #FF8C00;
+  background-image: linear-gradient(#FFA500, #FF8C00);
+  background-size: 100% 100%;
+  transition: background-size 0.2s ease;
+}
+
+#title-screen li a:hover {
+  background-size: 110% 110%;
+  cursor: pointer;
+}
+
+#game-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #000;
+}
+
+#left-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 70%;
+}
+
+#right-column {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 30%;
+}
+
+#canvas {
+  width: 100%;
+  height: 100%;
+}
+
+#score {
+  font-size: 24px;
+  margin-left: 10px;
+  color: #FFA500;
+  text-shadow: 2px 2px 0 #FF8C00;
+}
+
+#time {
+  font-size: 24px;
+  margin-right: 10px;
+  color: #ff9933;
+  text-shadow: 2px 2px 0 #000;
+}
