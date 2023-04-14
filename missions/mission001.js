@@ -8,19 +8,18 @@ app.stage.addChild(sprite);
 sprite.position.set(200, 200);
 
 function gameLoop() {
-  // Déplacez le sprite en fonction de la saisie utilisateur
   const speed = 5;
 
-  if (keyboard && (keyboard.right.isDown || gamepad.right)) {
+  if (new Keyboard().isDown(Keyboard.RIGHT_ARROW)) {
     sprite.x += speed;
   }
-  if (keyboard && (keyboard.left.isDown || gamepad.left)) {
+  if (new Keyboard().isDown(Keyboard.LEFT_ARROW)) {
     sprite.x -= speed;
   }
-  if (keyboard && (keyboard.down.isDown || gamepad.down)) {
+  if (new Keyboard().isDown(Keyboard.DOWN_ARROW)) {
     sprite.y += speed;
   }
-  if (keyboard && (keyboard.up.isDown || gamepad.up)) {
+  if (new Keyboard().isDown(Keyboard.UP_ARROW)) {
     sprite.y -= speed;
   }
 
@@ -34,7 +33,6 @@ function gameLoop() {
   // Répéter cette boucle de jeu à chaque image
   requestAnimationFrame(gameLoop);
 }
-
 // Détecter les saisies utilisateur
 const keyboard = new Keyboard();
 const gamepad = new Gamepad();
