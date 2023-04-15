@@ -17,7 +17,7 @@
     <button class="hidden_items" id="button_start_player_two">2 PLAYERS</button>
     <button class="hidden_items" id="button_option">OPTIONS</button>
     <button class="hidden_items" id="button_credits">CREDITS</button>
-    <button id="play_button">Play</button>
+    <button class="hidden_items play-button" id="play_button">PLAY</button>
 </body>
 
 
